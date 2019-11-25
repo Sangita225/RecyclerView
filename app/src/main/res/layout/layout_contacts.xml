@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="131dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kitty" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@+id/imgView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="Phone"
+        app:layout_constraintStart_toEndOf="@+id/imgView"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
